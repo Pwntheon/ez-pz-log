@@ -1,0 +1,14 @@
+{
+  "name": "@pwntheon/ez-pz-log",
+  "version": "1.0.0",
+  "description": "A small tool that allows you to filter out which console.log messages to see based on tags",
+  "main": "index.js",
+  "keywords": [
+    "log",
+    "filter",
+    "logging",
+    "console"
+  ],
+  "author": "Aksel Ladegaard",
+  "license": "ISC"
+}
