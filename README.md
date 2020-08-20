@@ -1,4 +1,5 @@
-[![npm (scoped)](https://img.shields.io/npm/v/@pwntheon/ez-pz-log)](https://github.com/Pwntheon/ez-pz-log)
+[![npm (scoped)](https://img.shields.io/npm/v/@pwntheon/ez-pz-log)](https://www.npmjs.com/package/@pwntheon/ez-pz-log)
+[![github](https://img.shields.io/github/v/tag/pwntheon/ez-pz-log?label=github)](https://github.com/Pwntheon/ez-pz-log)
 
 # ez-pz-log
 A small tool that allows you to filter out which console.log messages to see based on tags
@@ -10,7 +11,7 @@ In your code, import ez-pz-log and use it like console.log, with the first argum
 
 In the app:
 ```javascript
-import log from 'ez-pz-log';
+import log from '@pwntheon/ez-pz-log';
 const count = 4;
 log("math", "count is equal to", count);
 log("debug", "some debug info");
@@ -36,7 +37,7 @@ If you wish to do console.warn, console.table or some other logging function, yo
 
 To switch function permanenely (until you switch to something else) just run ez-pz-log with the function you want as the only parameter:
 ```javascript
-import log from 'ez-pz-log';
+import log from '@pwntheon/ez-pz-log';
 log(console.error);
 try {
     foo.bar();
@@ -47,7 +48,7 @@ try {
 
 You can also use a custom function just once by providing it as the first argument:
 ```javascript
-import log from 'ez-pz-log';
+import log from '@pwntheon/ez-pz-log';
 try {
     foo.bar();
 } catch(ex) {
