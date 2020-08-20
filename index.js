@@ -43,4 +43,10 @@ const ezpzlog = function ezpzlog(...args) {
 ezpzlog.f = ezpzlog.f || console.log;
 ezpzlog.trackedTags = getTags();
 
-module.exports = ezpzlog;
+if (typeof module !== 'undefined' && module.exports) {
+    // We're in nodejs
+    module.exports = ezpzlog;
+} else {
+    // We're in a browser
+    window.ezpzlog = ezpzlog;
+}
