@@ -38,6 +38,9 @@ const ezpzlog = function ezpzlog(...args) {
     } else if(args.length > 2 && typeof args[0] === "function" && typeof args[1] === "string" && ezpzlog.trackedTags.includes(args[1])) {
         args[0](...(args.slice(2)));
     }
+    if(window && typeof window.ezpzlog === "undefined") {
+        window.ezpzlog = ezpzlog;
+    }
 };
 
 ezpzlog.f = ezpzlog.f || console.log;
