@@ -4,7 +4,7 @@
 # ez-pz-log
 A small tool that allows you to filter out which console.log messages to see based on tags
 
-**Note:** Currently only works in browser, not node.
+**Note:** Should work in node, but i haven't tested it.
 
 ## Usage
 In your code, import ez-pz-log and use it like console.log, with the first argument being the tag. Logged messages will not be printed to console unless the tag is added to the list of tags to show.
@@ -35,7 +35,7 @@ To remove a tag, just type `ezpzlog("tagname")` again.
 
 If you wish to do console.warn, console.table or some other logging function, you can do this in two ways.
 
-To switch function permanenely (until you switch to something else) just run ez-pz-log with the function you want as the only parameter:
+To switch function permanentely (until you switch to something else) just run ez-pz-log with the function you want as the only parameter:
 ```javascript
 import log from '@pwntheon/ez-pz-log';
 log(console.error);
